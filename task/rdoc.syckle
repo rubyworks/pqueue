@@ -3,7 +3,7 @@ rdoc:
   service  : RDoc
   include  : ~
   exclude  : ~
-  template : ~
+  template : hanna
   main     : ~
   extra    : ~
   active   : true

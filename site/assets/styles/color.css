@@ -1,0 +1,45 @@
+/* COLOR */
+
+body { color: ##333333; background: #ffffff; }
+h1 { }
+a { color: #4B5064; }
+pre { color: white; }
+
+/* #header .title */
+
+#header { }
+
+.title h1 { color: #4B5064; }
+.title pre { background: transparent; }
+
+.download {
+  background: #CBD0E3;
+  border-color: #4B5064;
+  color: ##333333;
+}
+
+.download a { color: #4B5064; }
+
+/* #nav .menu */
+
+#nav { border-color: #4B5064;
+  background: url(../images/fade.png) repeat-y #CBD0E3;
+}
+
+.menu ul { background: transparent; }
+.menu ul li a { color: #4B5064; border-color: #CBD0E3; }
+
+/* #main .doc */
+
+.doc { }
+.doc a { color: #4B5064; }
+.doc a:hover { }
+.doc p { color: ##333333; }
+.doc h2 { color: #4B5064; border-color: #CBD0E3; }
+.doc h3 { border-color: #CBD0E3; }
+
+/* #footer .copyright */
+
+/* #footer { background: #96A0C8; border-color: #4B5064; } */
+.copyright { color:  colors[:text]; }
+

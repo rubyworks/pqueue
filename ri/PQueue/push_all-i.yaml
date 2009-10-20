@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: merge
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Add more than one element at the same time. See #push."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "The elements object must respond to #to_a, or to be a PQueue itself."
+full_name: PQueue#push_all
+is_singleton: false
+name: push_all
+params: (elements)
+visibility: public

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+  <title>File: README [PQueue]</title>
+
+  <link rel="SHORTCUT ICON" href="./images/file.png">
+
+  <link type="text/css" media="screen" rel="stylesheet" href="./rdoc.css" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body class="file">
+
+  <div class="head">
+    <h1>
+      <img src="./images/file.png" align="absmiddle">&nbsp;
+      <a href="./index.html">PQueue</a>&nbsp;
+      <a href="/">README</a>
+    </h1>
+  </div>
+
+  <div id="metadata">
+    <div id="project-metadata">
+
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./HISTORY.html">HISTORY</a></li>
+        
+          <li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+        
+          <li class="file"><a href="./README.html">README</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li class="class"><a href="./PQueue.html">PQueue</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+
+    <div id="validator-badges">
+      Generated with <a href="http://github.com/proutils/rdazzle">Razzle Dazzle Redfish</a><br/><br/>
+      <a href="http://validator.w3.org/check/referer">[Validate]</a>
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1><a href="PQueue.html">PQueue</a></h1>
+<ul>
+<li>home: <a
+href="http://rubyworks.github.com/pqueue">rubyworks.github.com/pqueue</a>
+
+</li>
+<li>rdocs: <a
+href="http://rubyworks.github.com/pqueue/rdoc">rubyworks.github.com/pqueue/rdoc</a>
+
+</li>
+<li>source: <a
+href="http://github.com/rubyworks/pqueue">github.com/rubyworks/pqueue</a>
+
+</li>
+<li>forum: <a
+href="http://googlegroups.com/group/rubyworks">googlegroups.com/group/rubyworks</a>
+
+</li>
+</ul>
+<h2>DESCRIPTION</h2>
+<p>
+Priority queue with array based heap.
+</p>
+<p>
+A priority queue is like a standard queue, except that each inserted
+elements is given a certain priority, based on the result of the comparison
+block given at instantiation time. Also, retrieving an element from the
+queue will always return the one with the highest priority (see pop and
+top).
+</p>
+<p>
+The default is to compare the elements in repect to their #> method. For
+example, Numeric elements with higher values will have higher priorities.
+</p>
+<p>
+This library is based off the original PQueue.rb by K.Kodama and Heap.rb by
+Ronald Butler. The two libraries were later merged and generally improved
+by Olivier Renaud.
+</p>
+<h2>SYNOPSIS</h2>
+<pre>
+  require 'pqueue'
+
+  pq = PQueue.new
+
+  ... to do ...
+</pre>
+<h2>INSTALLATION</h2>
+<p>
+To install with RubyGems simply open a console and type:
+</p>
+<pre>
+  gem install pqueue
+</pre>
+<p>
+Local installation requires Setup.rb (gem install setup), then download the
+tarball package and type:
+</p>
+<pre>
+  tar -xvzf pqueue-1.0.0.tgz
+  cd pqueue-1.0.0
+  sudo setup.rb all
+</pre>
+<p>
+Windows users use &#8216;ruby setup.rb all&#8217;.
+</p>
+<h2>COPYING</h2>
+<ul>
+<li>Copyright &#169; 2007 Olivier Renaud
+
+</li>
+<li>Copyright &#169; 2005 K.Kodama
+
+</li>
+<li>Copyright &#169; 2003 Rick Bradley
+
+</li>
+<li>Copyright &#169; 2002 Ronald Butler
+
+</li>
+<li>Copyright &#169; 2001 K.Kodama
+
+</li>
+</ul>
+<p>
+This software is distributed under the terms of the LGPL v3 license.
+</p>
+<p>
+See COPYING file for details.
+</p>
+
+  </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Make a heap out of an unordered array.
+full_name: PQueue#heapify
+is_singleton: false
+name: heapify
+params: ()
+visibility: private

@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: sort
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Return a sorted array, with highest priority first.
+full_name: PQueue#to_a
+is_singleton: false
+name: to_a
+params: ()
+visibility: public

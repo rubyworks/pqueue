@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Assumes that the tree is a heap, for nodes &lt; k.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: The element at index k will go up until it finds its place.
+full_name: PQueue#upheap
+is_singleton: false
+name: upheap
+params: (k)
+visibility: private

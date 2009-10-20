@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Return top n-element as a sorted array.
+full_name: PQueue#pop_array
+is_singleton: false
+name: pop_array
+params: (n=@size)
+visibility: public

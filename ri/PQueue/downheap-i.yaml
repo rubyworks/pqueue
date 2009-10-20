@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Assumes the entire tree is a heap.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: The element at index k will go down until it finds its place.
+full_name: PQueue#downheap
+is_singleton: false
+name: downheap
+params: (k)
+visibility: private

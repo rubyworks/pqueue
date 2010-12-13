@@ -6,6 +6,9 @@ contact: Trans <transfire@gmail.com>
 license: LGPLv3
 created: 2001-03-10
 
+requires:
+  - syckle (build)
+
 authors:
   - K. Kodama
   - Ronald Butler

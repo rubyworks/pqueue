@@ -1,13 +1,11 @@
-# PQueue
+# PQueue - Priority Queue
 #
+# * Copyright (c) 2011 Thomas Sawyer
 # * Copyright (c) 2007 Olivier Renaud
 # * Copyright (c) 2005 K.Kodama
 # * Copyright (c) 2003 Rick Bradley
 # * Copyright (c) 2002 Ronald Butler
 # * Copyright (c) 2001 K.Kodama
-#
-# This is distributed freely in the sence of 
-# GPL(GNU General Public License).
 
 # Priority queue with array based heap.
 #

@@ -261,31 +261,9 @@ class PQueue
     que = @que.dup
 
     v = que.delete_at(k)
+    i = binary_index(que, v)
 
-    i = que.size.div(2)
-    q = i
-    r = nil
-
-    loop do
-      case @cmp.call(v, que[i])
-      when 0, nil
-        r = i
-        break
-      when 1, true
-        i = (que.size + i).div(2)
-        i += 1 if i == q  # don't repeat yourself
-      when -1, false
-        i = (i).div(2)
-        i -= 1 if i == q  # don't repeat yourself
-      else
-        warn "bad comparison procedure in #{self.inspect}"
-        r = i
-        break
-      end
-      q = i
-    end
-
-    que.insert(r, v)
+    que.insert(i, v)
 
     @que = que
 
@@ -313,5 +291,27 @@ class PQueue
   # Alias of #sort!
   #
   alias heapify sort!
+
+  #
+  def binary_index(que, target)
+    upper = que.size - 1
+    lower = 0
+
+    while(upper >= lower) do
+      idx  = lower + (upper - lower) / 2
+      comp = @cmp.call(target, que[idx])
+
+      case comp
+      when 0, nil
+        return idx
+      when 1, true
+        lower = idx + 1
+      when -1, false
+        upper = idx - 1
+      else
+      end
+    end
+    lower
+  end
 
 end # class PQueue

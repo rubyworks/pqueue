@@ -1,5 +1,21 @@
 = CHANGE HISTORY
 
+== 2.0.2 / 2011-10-29
+
+It's been one of those days. I went to to get a wash cloth for the shower,
+on my way through the kitchen realized the chilling cookie dough needed to
+be put in the oven, bit I forgot to put flower in the batter, so they burnt
+in minute and made a mess that took almost an hour to clean-up. Then I discover
+the shower still running, hot water was all but gone, and my bedroom felt like
+a suana. And to top it all off, it was at this point I realized my binary
+search algrithm didn't work. Sigh. And fuck if my grandmother won't stop making
+me food I don't want to eat. Yea, one of those days.
+
+Changes:
+
+* Fixed #reheap method.
+
+
 == 2.0.1 / 2011-10-29
 
 Quick fix to remove old legacy library that was supposed to be 

@@ -1,9 +1,10 @@
 require 'microtest'
+require 'ae'
 require 'ae/legacy'
 
 require 'pqueue'
 
-class TC_PQueue < MicroTest::TestCase
+class PQueueTest < MicroTest::TestCase
   include AE::Legacy::Assertions
 
   ARY_TEST   = [2,6,1,3,8,15,0,-4,7,8,10]
@@ -152,5 +153,26 @@ class TC_PQueue < MicroTest::TestCase
     q.pop
     assert_not_equal(q, r)
   end
-end
 
+  def test_reheap
+    q = PQueue.new([2,4,5])
+    q << 6
+    q.to_a.assert == [2,4,5,6]
+    q << 1
+    q.to_a.assert == [1,2,4,5,6]
+    q << 3
+    q.to_a.assert == [1,2,3,4,5,6]
+
+    q = PQueue.new([100,5,25])
+    q.to_a.assert == [5,25,100]
+    q << 17
+    q.to_a.assert == [5,17,25,100]
+    q << 0
+    q.to_a.assert == [0,5,17,25,100]
+    q << -5
+    q.to_a.assert == [-5,0,5,17,25,100]
+    q << 100
+    q.to_a.assert == [-5,0,5,17,25,100,100]
+  end
+
+end

@@ -1,17 +1,30 @@
-require 'pqueue'
-require 'test/unit'
+require 'microtest'
+require 'ae/legacy'
 
-class TC_PQueue < Test::Unit::TestCase
-  ARY_TEST = [2,6,1,3,8,15,0,-4,7,8,10]
+require 'pqueue'
+
+class TC_PQueue < MicroTest::TestCase
+  include AE::Legacy::Assertions
+
+  ARY_TEST   = [2,6,1,3,8,15,0,-4,7,8,10]
   ARY_TEST_2 = [25,10,5,13,16,9,16,12]
 
-  def test_initialize
-    assert_nothing_raised { PQueue.new }
-    assert_nothing_raised { PQueue.new([3]) }
-    assert_nothing_raised { PQueue.new(ARY_TEST) }
-    assert_nothing_raised { PQueue.new {|a,b| a<b} }
-    assert_nothing_raised { PQueue.new([3]) {|a,b| a<b} }
-    assert_nothing_raised { PQueue.new(ARY_TEST) {|a,b| a<b} }
+  def test_initialize_empty
+    PQueue.new
+  end
+
+  def test_initialize_single_element
+    PQueue.new([3])
+  end
+
+  def test_initialize_multiple_elements
+    PQueue.new(ARY_TEST)
+  end
+
+  def test_initialize_with_custom_comparison
+    PQueue.new {|a,b| b<=>a}
+    PQueue.new([3]) {|a,b| b<=>a}
+    PQueue.new(ARY_TEST) {|a,b| b<=>a}
   end
 
   def test_top
@@ -36,14 +49,18 @@ class TC_PQueue < Test::Unit::TestCase
     ret = q.push(24)
     assert_equal(q, ret)
     assert_equal(ARY_TEST.size+1, q.size)
+  end
 
-    ret = q.push_all(ARY_TEST_2)
+  def test_concat
+    q = PQueue.new(ARY_TEST)
+
+    ret = q.concat(ARY_TEST_2)
     assert_equal(q, ret)
-    assert_equal(ARY_TEST.size+1+ARY_TEST_2.size, q.size)
+    assert_equal(ARY_TEST.size+ARY_TEST_2.size, q.size)
 
     q = PQueue.new(ARY_TEST)
     r = PQueue.new(ARY_TEST_2)
-    q.push_all(r)
+    q.concat(r)
     assert_equal(ARY_TEST.size + ARY_TEST_2.size, q.size)
   end
 
@@ -70,9 +87,9 @@ class TC_PQueue < Test::Unit::TestCase
 
   def test_to_a
     q = PQueue.new(ARY_TEST)
-    assert_equal(ARY_TEST.sort.reverse, q.sort)
+    assert_equal(ARY_TEST.sort, q.to_a)
     q = PQueue.new(0..4)
-    assert_equal([4,3,2,1,0], q.sort)
+    assert_equal([0,1,2,3,4], q.to_a)
   end
 
   def pop_array
@@ -90,20 +107,20 @@ class TC_PQueue < Test::Unit::TestCase
     assert_equal(false, q.include?(15))
   end
 
-  def test_assert_equal
+  def test_equal
     assert_equal(PQueue.new, PQueue.new)
     assert_equal(PQueue.new(ARY_TEST), PQueue.new(ARY_TEST.sort_by{rand}))
   end
 
-  def test_replace_top
+  def test_swap
     q = PQueue.new
-    assert_nil(q.replace_top(6))
+    assert_nil(q.swap(6))
     assert_equal(6, q.top)
 
     q = PQueue.new(ARY_TEST)
     h = PQueue.new(ARY_TEST)
     q.pop; q.push(11)
-    h.replace_top(11)
+    h.swap(11)
     assert_equal(q, h)
   end
 
@@ -126,7 +143,7 @@ class TC_PQueue < Test::Unit::TestCase
 
     ary = ARY_TEST.dup
     q = PQueue.new([1])
-    q.push_all(ary)
+    q.concat(ary)
     q.pop
     assert_equal(ARY_TEST, ary)
 

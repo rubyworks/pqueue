@@ -21,10 +21,12 @@ vclog:
     - log/History.rdoc
     - log/Changes.rdoc
 
-#tag:
-#  service: custom
-#  release: |
-#    puts %[pom news | git tag -a -F - #{project.version}]
+tag:
+  service: custom
+  release: |
+    cmd = %[pom news | git tag -a -F - #{project.version}]
+    puts cmd
+    sh cmd
 
 
 #qed:

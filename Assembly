@@ -1,0 +1,37 @@
+---
+#erbside:
+#  path: lib/pqueue/version.rb
+
+email:
+  mailto:
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+
+gem:
+  active: true
+
+github:
+  active: true
+
+dnote:
+  output: log/NOTES.rdoc
+
+vclog:
+  output:
+    - log/History.rdoc
+    - log/Changes.rdoc
+
+#tag:
+#  service: custom
+#  release: |
+#    puts %[pom news | git tag -a -F - #{project.version}]
+
+
+#qed:
+#  files: qed/
+
+#qedoc:
+#  files: qed/
+#  title: "PQueue Demonstandum"
+#  output: QED.rdoc
+

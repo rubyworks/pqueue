@@ -1,5 +1,16 @@
 = CHANGE HISTORY
 
+== 2.0.1 / 2011-10-29
+
+Quick fix to remove old legacy library that was supposed to be 
+removed in previous release. No big deal, it just confused the 
+YARD documentation.
+
+Changes:
+
+* Remove legacy version of library.
+
+
 == 2.0.0 / 2011-10-29
 
 This is a complete rewrite to simplify the design and use more

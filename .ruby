@@ -44,7 +44,7 @@ revision: 0
 created: '2001-03-10'
 summary: Queue of Prioritized Elements
 title: PQueue
-version: 2.0.0
+version: 2.0.1
 name: pqueue
 description: ! 'A priority queue is like a standard queue, except that each inserted
   elements

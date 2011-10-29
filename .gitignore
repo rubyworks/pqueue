@@ -1,5 +1,6 @@
+.reap/digest
+.yardoc
+doc
 log
-doc/rdoc
-doc/ri
 pkg
-MANIFEST
+

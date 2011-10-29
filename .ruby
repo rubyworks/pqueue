@@ -32,7 +32,11 @@ repositories:
 - uri: git://github.com/rubyworks/pqueue.git
   scm: git
   name: upstream
-resources: {}
+resources:
+  home: http://rubyworks.github.com/pqueue
+  code: http://github.com/rubyworks/pqueue
+  mail: http://groups.google.com/group/rubyworks-mailinglist
+  bugs: http://github.com/rubyworks/pqueue/issues
 extra: {}
 load_path:
 - lib

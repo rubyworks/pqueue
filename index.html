@@ -17,9 +17,11 @@
 
   <SCRIPT type="text/javascript">
     $(document).ready(function() {
-      $('pre').wrapInner('<code></code>');
-      hljs.tabReplace = '    ';
-      hljs.initHighlightingOnLoad('ruby');
+      $('#readme').load('readme.html', function(){
+        $('pre').wrapInner('<code></code>');
+        hljs.tabReplace = '    ';
+        hljs.initHighlightingOnLoad('ruby');
+      });
     });
   </SCRIPT>
 
@@ -29,120 +31,28 @@
 
 <div id="header">
   <div class="title"> 
-    
-      <div class="logo">
-        <a href="svn://rubyforge.org/var/svn/death/pqueue"><img src="assets/images/logo.jpg" /></a>
-      </div>    
-    
+    <div class="logo">
+      <a href="svn://rubyforge.org/var/svn/death/pqueue"><img src="assets/images/logo.jpg" /></a>
+    </div>    
     <h1>PQueue</h1>
-<ul>
-<li>home: <a href="http://rubyworks.github.com/pqueue">http://rubyworks.github.com/pqueue</a>
-
-</li>
-<li>rdocs: <a href="http://rubyworks.github.com/pqueue/rdoc">http://rubyworks.github.com/pqueue/rdoc</a>
-
-</li>
-<li>source: <a href="http://github.com/rubyworks/pqueue">http://github.com/rubyworks/pqueue</a>
-
-</li>
-<li>forum: <a href="http://googlegroups.com/group/rubyworks">http://googlegroups.com/group/rubyworks</a>
-
-</li>
-</ul>
-
   </div>
 </div>
 
 <div id="nav">
   <div class="menu">
     <ul>
-    
-      <li><a href="#section_description">DESCRIPTION</a></li>
-    
-      <li><a href="#section_synopsis">SYNOPSIS</a></li>
-    
-      <li><a href="#section_installation">INSTALLATION</a></li>
-    
-      <li><a href="#section_copying">COPYING</a></li>
-    
+      <li><a href="http://rubyworks.github.com/pqueue">Pigs Is Here</a></li>
+      <li><a href="http://rubydoc.info/gems/pqueue/frames">Pigs Must Knows Hows</a></li>
+      <li><a href="http://github.com/rubyworks/pqueue">Pigs Must Sees Source</a></li>
+      <li><a href="http://groups.google.com/group/rubyworks">Pigs Likes to Scratch</a></li>
+      <li>IRC: #rubyworks on freenode.net</li>
     </ul>
   </div>
 </div>
 
 <div id="main">
-  <div class="doc">
-    <div class="section" id="section_description"><h2>DESCRIPTION</h2>
-<p>
-Priority queue with array based heap.
-</p>
-<p>
-A priority queue is like a standard queue, except that each inserted
-elements is given a certain priority, based on the result of the comparison
-block given at instantiation time. Also, retrieving an element from the
-queue will always return the one with the highest priority (see #pop and
-#top).
-</p>
-<p>
-The default is to compare the elements in repect to their #&gt; method. For
-example, Numeric elements with higher values will have higher priorities.
-</p>
-<p>
-This library is based off the original PQueue.rb by K.Kodama and Heap.rb by
-Ronald Butler. The two libraries were later merged and generally improved
-by Olivier Renaud.
-</p>
-</div><div class="section" id="section_synopsis"><h2>SYNOPSIS</h2>
-<pre>
-  require 'pqueue'
-
-  pq = PQueue.new
-
-  ... to do ...
-</pre>
-</div><div class="section" id="section_installation"><h2>INSTALLATION</h2>
-<p>
-To install with RubyGems simply open a console and type:
-</p>
-<pre>
-  gem install pqueue
-</pre>
-<p>
-Local installation requires Setup.rb (gem install setup), then download the
-tarball package and type:
-</p>
-<pre>
-  tar -xvzf pqueue-1.0.0.tgz
-  cd pqueue-1.0.0
-  sudo setup.rb all
-</pre>
-<p>
-Windows users use &#8216;ruby setup.rb all&#8217;.
-</p>
-</div><div class="section" id="section_copying"><h2>COPYING</h2>
-<ul>
-<li>Copyright &#169; 2007 Olivier Renaud
-
-</li>
-<li>Copyright &#169; 2005 K.Kodama
-
-</li>
-<li>Copyright &#169; 2003 Rick Bradley
-
-</li>
-<li>Copyright &#169; 2002 Ronald Butler
-
-</li>
-<li>Copyright &#169; 2001 K.Kodama
-
-</li>
-</ul>
-<p>
-This software is distributed under the terms of the LGPL v3 license.
-</p>
-<p>
-See COPYING file for details.
-</p>
-</div>
+  <div id="readme" class="doc">
+    Sorry, your browser must support Javascript in order to see the README.
   </div>
 </div>
 
@@ -164,7 +74,7 @@ See COPYING file for details.
 
 </div>
   <div class="copyright">
-    PQueue Copyright &copy; 2009 <br/>
+    Copyright &copy; 2011 Rubyworks. All Rights Reserved.
   </div>
 </div>
 

@@ -1,0 +1,59 @@
+
+<h1>PQueue</h1>
+
+<p><a href="http://rubyworks.github.com/pqueue">Home</a> | <a
+href="http://github.com/rubyworks/pqueue">Code</a> | <a
+href="http://rubydoc.info/gems/pqueue/frames">Docs</a> | <a
+href="http://groups.google.com/group/rubyworks">Mail</a> | #rubyworks</p>
+
+<p><a href="http://travis-ci.org/rubyworks/pqueue"><img
+src="http://travis-ci.org/rubyworks/pqueue.png" /></a></p>
+
+<h2>DESCRIPTION</h2>
+
+<p>Priority queue with array based heap.</p>
+
+<p>A priority queue is like a standard queue, except that each inserted
+elements is given a certain priority, based on the result of the comparison
+block given at instantiation time. Also, retrieving an element from the
+queue will always return the one with the highest priority (see #pop and
+#top).</p>
+
+<p>The default is to compare the elements in repect to their #&gt; method. For
+example, Numeric elements with higher values will have higher priorities.</p>
+
+<p>This library is based off the original PQueue.rb by K.Kodama and Heap.rb by
+Ronald Butler. The two libraries were later merged and generally improved
+by Olivier Renaud.</p>
+
+<h2>SYNOPSIS</h2>
+
+<pre>require 'pqueue'
+
+pq = PQueue.new([2,3,1]){ |a,b| a &gt; b }
+
+pq.pop  #=&gt; 3</pre>
+
+<h2>ACKNOWLEDGEMENT</h2>
+
+<p>Although the library has been completely rewritten since, we still would
+like to acknowledge the efforts of the original PQueue authors and
+contributors.</p>
+<ul><li>
+<p>Olivier Renaud (2007)</p>
+</li><li>
+<p>Rick Bradley (2003)</p>
+</li><li>
+<p>Ronald Butler (2002)</p>
+</li><li><ol style="display: upper-alpha"><li>
+<p>Kodama (2001, original library)</p>
+</li></ol>
+</li></ul>
+
+<h2>COPYRIGHTS</h2>
+
+<p>Copyright © 2011 Rubyworks.</p>
+
+<p>PQueue is distributable in accordance with the <b>FreeBSD</b> license.</p>
+
+<p>See the COPYING.rdoc file for details.</p>

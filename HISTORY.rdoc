@@ -4,10 +4,16 @@
 
 This is a complete rewrite to simplify the design and use more
 of Ruby's internal methods. Overall performance should be markedly
-improoved. Note that the interal array that stores the queue is not
+improved. Note that the interal array that stores the queue is now
 in reverse order from the previous version. If using #to_a be aware
-that the priority order is now reversed.
+that the priority order is reversed. This release also swithes
+the library to distribution under the BSD-2-Clause license.
 
+Changes:
+
+* Rewrite library.
+* Modernize build configuration.
+* Switch to BSD-2-Clause license.
 
 == 1.0.0 / 2009-07-05
 
@@ -16,7 +22,5 @@ Ruby Facets and originally written by K. Komada.
 
 Changes:
 
-* 1 Major Enhancement
-
-    * Happy Birthday!
+* Happy New Birthday!
 

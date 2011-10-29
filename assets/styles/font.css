@@ -12,7 +12,7 @@ body { }
 /* #header .title */
 
 .title { font-size: 80%; }
-.title h1 { font-size: 450%; font-weight: bold; }
+.title h1 { font-size: 6em; font-weight: bold; padding-top: 20px; }
 
 .download { font-size: 150%; text-align: center; }
 .download h1 { font-size: 64px; }

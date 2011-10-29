@@ -19,12 +19,14 @@ block given at instantiation time. Also, retrieving an element from the
 queue will always return the one with the highest priority (see #pop and
 #top).</p>
 
-<p>The default is to compare the elements in repect to their #&gt; method. For
-example, Numeric elements with higher values will have higher priorities.</p>
+<p>The default is to compare the elements in repect to their #&lt;=&gt;
+method. For example, Numeric elements with higher values will have higher
+priorities.</p>
 
-<p>This library is based off the original PQueue.rb by K.Kodama and Heap.rb by
-Ronald Butler. The two libraries were later merged and generally improved
-by Olivier Renaud.</p>
+<p>This library is  a rewrite of the original PQueue.rb by K. Kodama and
+Heap.rb by Ronald Butler. The two libraries were later merged and generally
+improved by Olivier Renaud. Then the whole library  rewritten by Trans
+using the orginal as a functional reference.</p>
 
 <h2>SYNOPSIS</h2>
 
@@ -45,14 +47,13 @@ contributors.</p>
 <p>Rick Bradley (2003)</p>
 </li><li>
 <p>Ronald Butler (2002)</p>
-</li><li><ol style="display: upper-alpha"><li>
-<p>Kodama (2001, original library)</p>
-</li></ol>
+</li><li>
+<p>K Kodama (2001, original library)</p>
 </li></ul>
 
 <h2>COPYRIGHTS</h2>
 
-<p>Copyright © 2011 Rubyworks.</p>
+<p>Copyright © 2011 Rubyworks</p>
 
 <p>PQueue is distributable in accordance with the <b>FreeBSD</b> license.</p>
 

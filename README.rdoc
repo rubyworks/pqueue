@@ -5,6 +5,7 @@
 {Docs}[http://rubydoc.info/gems/pqueue/frames] |
 {Mail}[http://groups.google.com/group/rubyworks] | #rubyworks
 
+{<img src="http://travis-ci.org/rubyworks/pqueue.png" />}[http://travis-ci.org/rubyworks/pqueue]
 
 == DESCRIPTION
 

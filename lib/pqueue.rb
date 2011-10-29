@@ -18,6 +18,9 @@
 class PQueue
 
   #
+  VERSION = "2.0.0"  #:erb: VERSION = "<%= version %>"
+
+  #
   # Returns a new priority queue.
   #
   # If elements are given, build the priority queue with these initial
@@ -148,12 +151,10 @@ class PQueue
   #
   alias :merge! :concat
 
-  # TODO: rename #pop_array or support n argument #pop itself.
-
   #
   # Return top n-element as a sorted array.
   #
-  def pop_array(n=@size)
+  def take(n=@size)
     a = []
     n.times{a.push(pop)}
     a

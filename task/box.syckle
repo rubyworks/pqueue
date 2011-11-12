@@ -1,9 +1,0 @@
----
-rubygems:
-  service: Box
-  types  : [gem, tar]
-  include: [bin, demo, lib, meta, test, "[A-Z]*"]
-  exclude: ~
-  master : true
-  active : true
-

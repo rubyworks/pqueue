@@ -1,6 +1,6 @@
 ---
 source:
-- meta
+- var
 authors:
 - name: K. Kodama
 - name: Ronald Butler
@@ -55,4 +55,4 @@ description: ! 'A priority queue is like a standard queue, except that each inse
 
   the one with the highest priority.'
 organization: rubyworks
-date: '2011-10-29'
+date: '2011-11-11'

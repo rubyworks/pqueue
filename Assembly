@@ -11,15 +11,16 @@ gem:
   active: true
 
 github:
-  active: true
+  gh_pages: web
 
 dnote:
+  title: Developer's Notes
   output: log/NOTES.rdoc
 
 vclog:
   output:
-    - log/History.rdoc
-    - log/Changes.rdoc
+    - log/history.html
+    - log/changes.html
 
 tag:
   service: custom
@@ -28,6 +29,9 @@ tag:
     puts cmd
     sh cmd
 
+#rubytest:
+#  path: test/*.rb
+#
 
 #qed:
 #  files: qed/

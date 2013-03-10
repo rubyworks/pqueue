@@ -5,15 +5,14 @@
 [![Flattr Me](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/324911/Rubyworks-Ruby-Development-Fund)
 
 [Website](http://rubyworks.github.com/pqueue) &middot;
-[API](http://rubydoc.info/gems/pqueue) &middot;
-[User Guide](http://wiki.github.com/rubyworks/pqueue) &middot;
+[YARD API](http://rubydoc.info/gems/pqueue) &middot;
 [Report Issue](http://github.com/rubyworks/pqueue/issues) &middot;
 [Source Code](http://github.com/rubyworks/pqueue)
 
-<br/>
+
+## About
 
 PQueue is a priority queue with array based heap.
-
 A priority queue is like a standard queue, except that each inserted
 element is given a certain priority, based on the result of the
 comparison block given at instantiation time. Also, retrieving an element

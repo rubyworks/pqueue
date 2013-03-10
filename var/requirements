@@ -1,5 +1,8 @@
 ---
-- detroit   (build)
-- microtest (test)
-- ae        (test)
+- detroit      (build)
+- ergo         (build)
+- rubytest     (test)
+- rubytest-cli (test)
+- microtest    (test)
+- ae           (test)
 

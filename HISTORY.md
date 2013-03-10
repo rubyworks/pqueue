@@ -1,6 +1,6 @@
-= CHANGE HISTORY
+# CHANGE HISTORY
 
-== 2.0.2 / 2011-10-29
+## 2.0.2 / 2011-10-29
 
 It's been one of those days. I went to to get a wash cloth for the shower,
 on my way through the kitchen realized the chilling cookie dough needed to
@@ -16,7 +16,7 @@ Changes:
 * Fixed #reheap search algorithm.
 
 
-== 2.0.1 / 2011-10-29
+## 2.0.1 / 2011-10-29
 
 Quick fix to remove old legacy library that was supposed to be 
 removed in previous release. No big deal, it just confused the 
@@ -27,7 +27,7 @@ Changes:
 * Remove legacy version of library.
 
 
-== 2.0.0 / 2011-10-29
+## 2.0.0 / 2011-10-29
 
 This is a complete rewrite to simplify the design and use more
 of Ruby's internal methods.  Overall performance should be markedly
@@ -44,7 +44,7 @@ Changes:
 * Switch to BSD-2-Clause license.
 
 
-== 1.0.0 / 2009-07-05
+## 1.0.0 / 2009-07-05
 
 This is the initial standalone release of PQueue, spun-off from the
 Ruby Facets and originally written by K. Komada.

@@ -25,13 +25,13 @@ vclog:
 tag:
   service: custom
   release: |
-    cmd = %[pom news | git tag -a -F - #{project.version}]
+    cmd = %[gemdo news | git tag -a -F - #{project.version}]
     puts cmd
     sh cmd
 
-#rubytest:
-#  path: test/*.rb
-#
+rubytest:
+  loadpath: lib
+  files: test/test_*.rb
 
 #qed:
 #  files: qed/

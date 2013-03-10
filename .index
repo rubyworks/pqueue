@@ -1,0 +1,82 @@
+---
+revision: 2013
+type: ruby
+sources:
+- var
+authors:
+- name: Trans
+  email: transfire@gmail.com
+- name: K. Kodama
+- name: Ronald Butler
+- name: Olivier Renaud
+- name: Rick Bradley
+organizations:
+- name: Rubyworks
+requirements:
+- groups:
+  - build
+  development: true
+  name: detroit
+- groups:
+  - build
+  development: true
+  name: ergo
+- groups:
+  - test
+  development: true
+  name: rubytest
+- groups:
+  - test
+  development: true
+  name: rubytest-cli
+- groups:
+  - test
+  development: true
+  name: microtest
+- groups:
+  - test
+  development: true
+  name: ae
+conflicts: []
+alternatives: []
+resources:
+- type: home
+  uri: http://rubyworks.github.com/pqueue
+  label: Homepage
+- type: code
+  uri: http://github.com/rubyworks/pqueue
+  label: Source Code
+- type: mail
+  uri: http://groups.google.com/group/rubyworks-mailinglist
+  label: Mailing List
+- type: bugs
+  uri: http://github.com/rubyworks/pqueue/issues
+  label: Issue Tracker
+repositories:
+- name: upstream
+  scm: git
+  uri: git://github.com/rubyworks/pqueue.git
+categories: []
+copyrights:
+- holder: Rubyworks
+  year: '2009'
+- holder: K. Kodama
+  year: '2001'
+customs: []
+paths:
+  lib:
+  - lib
+created: '2001-03-10'
+summary: Queue of Prioritized Elements
+title: PQueue
+version: 2.0.2
+name: pqueue
+description: ! 'A priority queue is like a standard queue, except that each inserted
+  elements
+
+  is given a certain priority, based on the result of the comparison block given
+
+  at instantiation time. Retrieving an element from the queue will always return
+
+  the one with the highest priority.'
+date: '2013-03-10'

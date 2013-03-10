@@ -10,8 +10,7 @@
 [Report Issue](http://github.com/rubyworks/pqueue/issues) &middot;
 [Source Code](http://github.com/rubyworks/pqueue)
 
-
-## DESCRIPTION
+<br/>
 
 PQueue is a priority queue with array based heap.
 
@@ -31,7 +30,7 @@ and generally improved by Olivier Renaud. Then the whole library
 rewritten by Trans using the original as a functional reference.
 
 
-## USAGE
+## Usage
 
 Usage is simple enough. Think of it as an array that takes a block, where
 the block decides which element of the array goes first.
@@ -43,7 +42,14 @@ the block decides which element of the array goes first.
     pq.pop  #=> 3
 
 
-## ACKNOWLEDGMENTS
+## Install
+
+Using RubyGems:
+
+    gem install pqueue
+  
+
+## Acknowledgements
 
 Although the library has been completely rewritten since, we still would
 like to acknowledge the efforts of the original PQueue authors and
@@ -55,7 +61,7 @@ contributors.
 * K Kodama (2001, original library)
 
 
-## COPYRIGHTS
+## License & Copyrights
 
 Copyright (c) 2011 Rubyworks
 

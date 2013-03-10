@@ -13,10 +13,10 @@
 
 ## DESCRIPTION
 
-Priority queue with array based heap.
+PQueue is a priority queue with array based heap.
 
 A priority queue is like a standard queue, except that each inserted
-elements is given a certain priority, based on the result of the
+element is given a certain priority, based on the result of the
 comparison block given at instantiation time. Also, retrieving an element
 from the queue will always return the one with the highest priority
 (see #pop and #top).

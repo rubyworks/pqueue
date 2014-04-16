@@ -1,7 +1,10 @@
-.reap/digest
+.ergo/digest
 .yardoc
-doc
-log
-pkg
-tmp
-web
+doc/
+log/
+pkg/
+tmp/
+web/
+*.gem
+*.lock
+

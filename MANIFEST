@@ -1,7 +1,8 @@
 #!mast .ruby .yaropts bin lib man qed spec test [A-Z]*.*
-.ruby
 lib/pqueue.rb
 test/test_pqueue.rb
-HISTORY.rdoc
-README.rdoc
-COPYING.rdoc
+CONTRIBUTE.md
+Index.yml
+README.md
+HISTORY.md
+LICENSE.txt

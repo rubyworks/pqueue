@@ -1,9 +1,12 @@
 ---
-name: pqueue
+name:
+  pqueue
 
-version: 2.0.2
+version:
+  2.0.2
 
-title: PQueue
+title:
+  PQueue
 
 summary:
   Queue of Prioritized Elements
@@ -30,9 +33,11 @@ authors:
   - Olivier Renaud
   - Rick Bradley
 
-organization: Rubyworks
+organization:
+  Rubyworks
 
-created: 2001-03-10
+created:
+  2001-03-10
 
 copyrights:
   - (c) 2009 Rubyworks (BSD-2)

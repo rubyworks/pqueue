@@ -1,5 +1,13 @@
 # CONTRIBUTING
 
+## Setup
+
+Once you've cloned the repo, hit up Bundler.
+
+```
+$ bundle
+```
+
 ## Testing
 
 We are using the Microtest framework which is a very simple test

@@ -9,5 +9,6 @@ end
 
 group :build do
   gem "indexer"
+  gem "mast"
 end
 

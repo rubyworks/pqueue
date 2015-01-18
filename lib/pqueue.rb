@@ -111,7 +111,7 @@ class PQueue
   #
   # Alias of #pop.
   #
-  alias deq push
+  alias deq pop
 
   #
   # Returns the element with the highest priority, but

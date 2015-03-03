@@ -3,7 +3,7 @@ name:
   pqueue
 
 version:
-  2.0.2
+  2.1.0
 
 title:
   PQueue
@@ -20,7 +20,6 @@ description:
 resources:
   home: http://rubyworks.github.com/pqueue
   code: http://github.com/rubyworks/pqueue
-  mail: http://groups.google.com/group/rubyworks-mailinglist
   bugs: http://github.com/rubyworks/pqueue/issues
 
 repositories:

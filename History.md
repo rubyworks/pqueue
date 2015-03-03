@@ -2,19 +2,19 @@
 
 ## 2.1.0 / 2014-03-03
 
-Ostatnicky has found a bug! As it turns out both #deq and #shift were 
-aliased incorrectly to `push`, when they should have been to `pop`. 
-With this release that has been fixes, but we have modified `shift`
+Ostatnicky has found a bug! As it turns out both `#deq` and `#shift` were 
+aliased incorrectly to `push`, when they should have been to `#pop`. 
+With this release that has been fixes, but we have modified `#shift`
 to instead return the lowest priority item, which is a more polymorphic
-definition with its use in Array. In addition we have added `peek` as
-an alias for `top`, and added `bottom`, which it the opposite of `top`.
+definition with its use in Array. In addition we have added `#peek` as
+an alias for `#top`, and added `bottom`, which it the opposite of `#top`.
 
 Changes:
 
-* Fix `deq` as alias of `pop`, not `push`.
-* Fix `shift` to be like `pop` but opposite priority.
-* Add `peek` as alias of `top`.
-* Add `bottom` method as opposite of `top`.
+* Fix `#deq` as alias of `#pop`, not `#push`.
+* Fix `#shift` to be like `#pop` but opposite priority.
+* Add `#peek` as alias of `#top`.
+* Add `#bottom` method as opposite of `#top`.
 
 
 ## 2.0.2 / 2011-10-29
@@ -30,7 +30,7 @@ me food I don't want to eat. Yea, one of those days!
 
 Changes:
 
-* Fixed #reheap search algorithm.
+* Fixed `#reheap` search algorithm.
 
 
 ## 2.0.1 / 2011-10-29

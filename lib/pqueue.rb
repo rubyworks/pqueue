@@ -18,7 +18,7 @@
 class PQueue
 
   #
-  VERSION = "2.0.0"  #:erb: VERSION = "<%= version %>"
+  VERSION = "2.1.0"  #:erb: VERSION = "<%= version %>"
 
   #
   # Returns a new priority queue.
@@ -78,17 +78,17 @@ class PQueue
   end
 
   #
+  # Traditional alias for #push.
+  #
+  alias enq push
+
+  #
   # Alias of #push.
   #
   alias :<< :push
 
   #
-  # Alias of #push.
-  #
-  alias enq push
-
-  #
-  # Return the element with the highest priority and remove it from
+  # Get the element with the highest priority and remove it from
   # the queue.
   #
   # The highest priority is determined by the block given at instantiation
@@ -104,14 +104,24 @@ class PQueue
   end
 
   #
-  # Alias of #push.
+  # Traditional alias for #pop.
   #
-  alias shift push
+  alias deq pop
 
+  # Get the element with the lowest priority and remove it from
+  # the queue.
   #
-  # Alias of #pop.
+  # The lowest priority is determined by the block given at instantiation
+  # time.
   #
-  alias deq push
+  # The deletion time is O(log n), with n is the size of the queue.
+  #
+  # Return nil if the queue is empty.
+  #
+  def shift
+    return nil if empty?
+    @que.shift
+  end
 
   #
   # Returns the element with the highest priority, but
@@ -120,6 +130,20 @@ class PQueue
   def top
     return nil if empty?
     return @que.last
+  end
+
+  #
+  # Traditional alias for #top.
+  #
+  alias peek top
+
+  #
+  # Returns the element with the lowest priority, but
+  # does not remove it from the queue.
+  #
+  def bottom
+    return nil if empty?
+    return @que.first
   end
 
   #

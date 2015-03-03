@@ -1,5 +1,22 @@
 # CHANGE HISTORY
 
+## 2.1.0 / 2014-03-03
+
+Ostatnicky has found a bug! As it turns out both #deq and #shift were 
+aliased incorrectly to `push`, when they should have been to `pop`. 
+With this release that has been fixes, but we have modified `shift`
+to instead return the lowest priority item, which is a more polymorphic
+definition with its use in Array. In addition we have added `peek` as
+an alias for `top`, and added `bottom`, which it the opposite of `top`.
+
+Changes:
+
+* Fix `deq` as alias of `pop`, not `push`.
+* Fix `shift` to be like `pop` but opposite priority.
+* Add `peek` as alias of `top`.
+* Add `bottom` method as opposite of `top`.
+
+
 ## 2.0.2 / 2011-10-29
 
 It's been one of those days. I went to to get a wash cloth for the shower,

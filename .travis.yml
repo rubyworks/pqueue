@@ -1,6 +1,6 @@
 ---
 language: ruby
-script: "bundle exec rubytest test/test_*.rb"
+script: "bundle exec rubytest -Ilib test/test_*.rb"
 rvm:
   - 2.1.0
   - 2.0.0

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-group "test" do
+group :test do
   gem "microtest"
   gem "ae"
   gem "rubytest"

@@ -1,5 +1,19 @@
 # CHANGE HISTORY
 
+## 2.2.0 / 2026-04-02
+
+Maintenance release. Modernized project tooling.
+
+Changes:
+
+* Replace custom Indexer system with standard gemspec.
+* Replace Travis CI with GitHub Actions.
+* Add Rakefile.
+* Switch tests to minitest.
+* Update URLs to HTTPS.
+* Clean up obsolete files and .gitignore.
+
+
 ## 2.1.0 / 2014-03-03
 
 Ostatnicky has found a bug! As it turns out both `#deq` and `#shift` were 

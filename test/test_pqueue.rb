@@ -1,11 +1,7 @@
-require 'microtest'
-require 'ae'
-require 'ae/legacy'
-
+require 'minitest/autorun'
 require 'pqueue'
 
-class PQueueTest < MicroTest::TestCase
-  include AE::Legacy::Assertions
+class PQueueTest < Minitest::Test
 
   ARY_TEST   = [2,6,1,3,8,15,0,-4,7,8,10]
   ARY_TEST_2 = [25,10,5,13,16,9,16,12]
@@ -93,13 +89,6 @@ class PQueueTest < MicroTest::TestCase
     assert_equal([0,1,2,3,4], q.to_a)
   end
 
-  def pop_array
-    q = PQueue.new(ARY_TEST)
-    assert_equal(ARY_TEST.sort.reverse[0..5], q.pop_array(5))
-    q = PQueue.new(ARY_TEST)
-    assert_equal(ARY_TEST.sort.reverse, q.pop_array)
-  end
-
   def test_include
     q = PQueue.new(ARY_TEST + [21] + ARY_TEST_2)
     assert_equal(true, q.include?(21))
@@ -151,28 +140,28 @@ class PQueueTest < MicroTest::TestCase
     q = PQueue.new(ARY_TEST)
     r = q.dup
     q.pop
-    assert_not_equal(q, r)
+    refute_equal(q, r)
   end
 
   def test_reheap
     q = PQueue.new([2,4,5])
     q << 6
-    q.to_a.assert == [2,4,5,6]
+    assert_equal [2,4,5,6], q.to_a
     q << 1
-    q.to_a.assert == [1,2,4,5,6]
+    assert_equal [1,2,4,5,6], q.to_a
     q << 3
-    q.to_a.assert == [1,2,3,4,5,6]
+    assert_equal [1,2,3,4,5,6], q.to_a
 
     q = PQueue.new([100,5,25])
-    q.to_a.assert == [5,25,100]
+    assert_equal [5,25,100], q.to_a
     q << 17
-    q.to_a.assert == [5,17,25,100]
+    assert_equal [5,17,25,100], q.to_a
     q << 0
-    q.to_a.assert == [0,5,17,25,100]
+    assert_equal [0,5,17,25,100], q.to_a
     q << -5
-    q.to_a.assert == [-5,0,5,17,25,100]
+    assert_equal [-5,0,5,17,25,100], q.to_a
     q << 100
-    q.to_a.assert == [-5,0,5,17,25,100,100]
+    assert_equal [-5,0,5,17,25,100,100], q.to_a
   end
 
 end

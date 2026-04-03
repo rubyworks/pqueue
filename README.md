@@ -1,13 +1,10 @@
 # PQueue
 
-[![Gem Version](https://badge.fury.io/rb/pqueue.png)](http://badge.fury.io/rb/pqueue)
-[![Build Status](https://secure.travis-ci.org/rubyworks/pqueue.png)](http://travis-ci.org/rubyworks/pqueue) &nbsp; &nbsp;
-[![Flattr Me](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/324911/Rubyworks-Ruby-Development-Fund)
+[Source Code](https://github.com/rubyworks/pqueue) |
+[Report Issue](https://github.com/rubyworks/pqueue/issues)
 
-[Website](http://rubyworks.github.com/pqueue) &middot;
-[YARD API](http://rubydoc.info/gems/pqueue) &middot;
-[Report Issue](http://github.com/rubyworks/pqueue/issues) &middot;
-[Source Code](http://github.com/rubyworks/pqueue)
+[![Gem Version](https://img.shields.io/gem/v/pqueue.svg?style=flat)](https://rubygems.org/gems/pqueue)
+[![Build Status](https://github.com/rubyworks/pqueue/actions/workflows/test.yml/badge.svg)](https://github.com/rubyworks/pqueue/actions/workflows/test.yml)
 
 
 ## About
